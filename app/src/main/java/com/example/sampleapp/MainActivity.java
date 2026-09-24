@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
-            Toast.makeText(this, "Enable 'Display over other apps' to float bot on Home Screen", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Enable 'Display over other apps'", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(
                     Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
                     Uri.parse("package:" + getPackageName())
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && Settings.canDrawOverlays(this)) {
                 startBot();
             } else {
-                Toast.makeText(this, "Permission required for home screen floating bot.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Permission required.", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -49,4 +49,4 @@ public class MainActivity extends Activity {
         }
         finish();
     }
-          }
+}
