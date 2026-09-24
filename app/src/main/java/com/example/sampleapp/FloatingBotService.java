@@ -213,7 +213,7 @@ public class FloatingBotService extends Service {
             Notification notification = new Notification.Builder(this, channelId)
                     .setContentTitle("Sri Veeramathi Amman Tex")
                     .setContentText("Bot is floating on your home screen")
-                    .setSmallIcon(R.drawable.ic_launcher_foreground)
+                    .setSmallIcon(android.R.drawable.ic_dialog_info)
                     .build();
 
             startForeground(101, notification);
