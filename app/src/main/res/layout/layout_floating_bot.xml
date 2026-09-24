@@ -4,7 +4,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <!-- 1. The small floating bot bubble (chat head) -->
     <LinearLayout
         android:id="@+id/layout_bubble"
         android:layout_width="65dp"
@@ -16,10 +15,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="🤖"
-            android:textSize="32sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
-    <!-- 2. The bot chat dialog (pops up on tap) -->
     <LinearLayout
         android:id="@+id/layout_chat_screen"
         android:layout_width="310dp"
@@ -73,7 +71,7 @@
                     android:padding="10dp"
                     android:textColor="#69F0AE"
                     android:textSize="13sp"
-                    android:text="வணக்கம்! நான் உங்கள் டெக்ஸ் போட். தறி வரவு, பாவு (Warp) விவரங்களை டைப் செய்யவும்." />
+                    android:text="வணக்கம்! நான் உங்கள் டெக்ஸ் போட். தறி விவரங்களை டைப் செய்யவும்." />
             </LinearLayout>
         </ScrollView>
 
